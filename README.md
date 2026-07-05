@@ -51,7 +51,8 @@ gateway/
 │   └── manager.py           # CacheManager: get/set/lock, canonical key generation
 ├── coalescer/
 │   ├── middleware.py        # CoalescingMiddleware: wraps coalescer per GET request
-│   └── manager.py           # RequestCoalescer: in-memory flight deduplication
+│   ├── manager.py           # RequestCoalescer: in-memory flight deduplication
+│   └── engine.py            # Re-export module for RequestCoalescer
 ├── analyzer/
 │   ├── processor.py         # TrafficAnalyzer: background loop, adjusts QPS per key
 │   └── stats.py             # StatsCollector: sliding-window counters in Redis
@@ -63,8 +64,17 @@ gateway/
 │   └── security.py          # IPAllowlist dependency (checks X-Forwarded-For)
 ├── routing/
 │   └── router.py            # DownstreamProxy: forwards to simulator via httpx
-└── simulator/
-    └── service.py           # Simulated paid API with configurable latency
+├── proxy/
+│   └── handler.py           # Low-level HTTP forwarding with retry/timeout support
+├── benchmark/
+│   └── router.py            # Benchmark endpoints: /slow, /cache, /coalesce
+├── utils/
+│   └── helpers.py           # Utility functions
+├── deps.py                  # Dependency injection utilities
+├── simulator/
+│   └── service.py           # Embedded simulator service (for testing)
+└── simulator/ (project root)
+    └── main.py              # Standalone simulated paid API service
 ```
 
 ### Shared State via `app.state`
@@ -305,40 +315,6 @@ curl http://localhost:8000/admin/cache/cache:<hash_from_above>
 ```bash
 curl http://localhost:8000/metrics | grep -E 'gateway_|cache_|batch_|rate_limit'
 ```
-
----
-
-## Running Tests
-
-```bash
-# All tests
-pytest
-
-# New comprehensive test suite only
-pytest tests/unit/test_limiter.py \
-       tests/unit/test_cache_manager.py \
-       tests/unit/test_traffic_analyzer.py \
-       tests/integration/test_batching.py \
-       tests/integration/test_failures.py \
-       -v
-
-# With coverage
-pip install pytest-cov
-pytest --cov=gateway --cov-report=term-missing
-```
-
-### Test categories
-
-| File | Type | What it tests |
-|---|---|---|
-| `tests/unit/test_limiter.py` | Unit | Lua script loading, argument passing, allowed/denied logic |
-| `tests/unit/test_cache_manager.py` | Unit | Key generation, get/set/lock, TTL computation, Cache-Control parsing |
-| `tests/unit/test_traffic_analyzer.py` | Unit | Throttling, recovery, cooldown enforcement, stop() |
-| `tests/unit/test_swr.py` | Unit | Stale-While-Revalidate flow, stampede lock |
-| `tests/unit/test_ratelimit_middleware.py` | Unit | Middleware denied path, timestamp conversion |
-| `tests/integration/test_batching.py` | Integration | N concurrent requests → < N downstream calls |
-| `tests/integration/test_failures.py` | Failure | Redis unavailability in auth, cache, and rate limit paths |
-| `tests/integration/test_admin.py` | Integration | Admin endpoints, IP allowlist enforcement |
 
 ---
 
