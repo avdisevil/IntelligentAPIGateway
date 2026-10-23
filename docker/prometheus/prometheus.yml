@@ -7,4 +7,5 @@ scrape_configs:
     static_configs:
       - targets: ["gateway:8000"]
     metrics_path: "/metrics"
+    follow_redirects: true
     scrape_interval: 1s

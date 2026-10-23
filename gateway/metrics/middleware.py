@@ -33,7 +33,7 @@ class MetricsMiddleware(BaseHTTPMiddleware):
     ) -> Response:
         # Exempt health and metrics from tracking to avoid noise.
         # Also skip internal SWR revalidation calls (avoid double-counting).
-        if request.url.path in ["/health", "/metrics"] or \
+        if request.url.path.rstrip("/") in ["", "/health", "/metrics"] or \
                 request.headers.get(_REVALIDATE_HEADER) == "1":
             return await call_next(request)
 

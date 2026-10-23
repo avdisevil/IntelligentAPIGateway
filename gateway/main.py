@@ -1,4 +1,5 @@
-from fastapi import FastAPI, Request
+from fastapi import FastAPI, Request, Response
+from prometheus_client import generate_latest, CONTENT_TYPE_LATEST
 from contextlib import asynccontextmanager
 import asyncio
 import redis.asyncio as redis
@@ -45,6 +46,22 @@ async def lifespan(app: FastAPI):
     from gateway.admin.router import init_admin
     init_admin(app)
 
+    # Seed default demo keys if not present
+    from gateway.auth.models import APIKeyMetadata
+    demo_keys = [
+        ("my-key-001", "standard", 20, 30, 100),
+        ("benchmark-key", "benchmark_plan", 10000, 10000, 10000),
+        ("rate-limit-key", "rate_limit_plan", 10, 15, 50),
+    ]
+    for key_name, plan, qps, burst, hard_max in demo_keys:
+        if not await repo.get_key_metadata(key_name):
+            await repo.store_key_metadata(key_name, APIKeyMetadata(
+                plan_name=plan,
+                default_qps=qps,
+                burst_capacity=burst,
+                hard_max_qps=hard_max
+            ))
+
     # Start analyzer background loop
     task = asyncio.create_task(analyzer.run_loop())
 
@@ -87,8 +104,11 @@ app.add_middleware(CoalescingMiddleware, window_ms=100)
 
 # --- Routes & Routers ---
 
-# Prometheus metrics endpoint (mounted as sub-app)
-app.mount("/metrics", metrics_app)
+# Prometheus metrics endpoints (direct route avoids 307 redirect)
+@app.get("/metrics", include_in_schema=False)
+@app.get("/metrics/", include_in_schema=False)
+async def get_metrics():
+    return Response(content=generate_latest(), media_type=CONTENT_TYPE_LATEST)
 
 app.include_router(simulator_router, prefix="/simulator", tags=["simulator"])
 app.include_router(admin_router, prefix="/admin", tags=["admin"])
