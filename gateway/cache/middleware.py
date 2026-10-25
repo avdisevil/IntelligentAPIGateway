@@ -36,7 +36,7 @@ class ResponseCacheMiddleware(BaseHTTPMiddleware):
         cache: CacheManager | None = getattr(request.app.state, "cache", None)
 
         # Skip if no cache, not a GET, or exempt path
-        if not cache or request.method != "GET" or request.url.path in ["/metrics", "/health"]:
+        if not cache or request.method != "GET" or request.url.path.rstrip("/") in ["", "/metrics", "/health"]:
             return await call_next(request)
 
         cache_key = cache.generate_key(str(request.url))

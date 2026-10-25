@@ -13,7 +13,7 @@ class CoalescingMiddleware(BaseHTTPMiddleware):
     async def dispatch(
         self, request: Request, call_next: RequestResponseEndpoint
     ) -> Response:
-        if request.method != "GET" or request.url.path in ["/metrics", "/health"]:
+        if request.method != "GET" or request.url.path.rstrip("/") in ["", "/metrics", "/health"]:
             return await call_next(request)
 
         body = await request.body()
