@@ -1,0 +1,481 @@
+{
+  "measurement_window": "2026-10-27",
+  "environment": {
+    "gateway": "local Docker Compose",
+    "gateway_version": "checkout rebuilt before trials",
+    "host": "Windows workstation; hardware/resource limits not recorded",
+    "iterations_per_latency_scenario": 60,
+    "concurrency": 20,
+    "repeat_count": 3
+  },
+  "trials": [
+    {
+      "run_id": "1fd8be27fe0e449c838321fe597ee781",
+      "direct_backend": {
+        "requests_per_second": 35.37,
+        "latency_ms": {
+          "mean": 323.37,
+          "p50": 298.5,
+          "p95": 883.39,
+          "p99": 1161.94
+        },
+        "status_counts": {
+          "200": 60
+        }
+      },
+      "gateway_post_passthrough": {
+        "requests_per_second": 21.05,
+        "latency_ms": {
+          "mean": 868.89,
+          "p50": 924.74,
+          "p95": 1384.42,
+          "p99": 1430.13
+        },
+        "status_counts": {
+          "200": 60
+        }
+      },
+      "cache": {
+        "cold_status": 200,
+        "cold_x_cache": "MISS",
+        "warm_requests": 60,
+        "warm_hits": {
+          "HIT": 60
+        },
+        "warm_rps": 50.08,
+        "warm_latency_ms": {
+          "mean": 19.76,
+          "p50": 16.13,
+          "p95": 36.65,
+          "p99": 80.34
+        }
+      },
+      "identical_get_burst": {
+        "requests": 20,
+        "status_counts": {
+          "200": 20
+        },
+        "upstream_requests": 1.0,
+        "saved": 19.0,
+        "cache_misses": 20.0,
+        "cache_hits": 0.0,
+        "latency_ms": {
+          "mean": 219.74,
+          "p50": 216.15,
+          "p95": 237.14,
+          "p99": 297.22
+        }
+      },
+      "rate_limit_burst": {
+        "requests": 20,
+        "status_counts": {
+          "200": 15,
+          "429": 5
+        },
+        "latency_ms": {
+          "mean": 243.4,
+          "p50": 277.53,
+          "p95": 351.19,
+          "p99": 352.5
+        }
+      }
+    },
+    {
+      "run_id": "a7b9782807d6465282a90fcfac9080f3",
+      "direct_backend": {
+        "requests_per_second": 120.88,
+        "latency_ms": {
+          "mean": 99.03,
+          "p50": 81.63,
+          "p95": 235.37,
+          "p99": 330.74
+        },
+        "status_counts": {
+          "200": 60
+        }
+      },
+      "gateway_post_passthrough": {
+        "requests_per_second": 64.09,
+        "latency_ms": {
+          "mean": 287.68,
+          "p50": 290.38,
+          "p95": 370.0,
+          "p99": 371.08
+        },
+        "status_counts": {
+          "200": 60
+        }
+      },
+      "cache": {
+        "cold_status": 200,
+        "cold_x_cache": "MISS",
+        "warm_requests": 60,
+        "warm_hits": {
+          "HIT": 60
+        },
+        "warm_rps": 84.51,
+        "warm_latency_ms": {
+          "mean": 11.65,
+          "p50": 8.68,
+          "p95": 27.23,
+          "p99": 33.69
+        }
+      },
+      "identical_get_burst": {
+        "requests": 20,
+        "status_counts": {
+          "200": 20
+        },
+        "upstream_requests": 1.0,
+        "saved": 19.0,
+        "cache_misses": 20.0,
+        "cache_hits": 0.0,
+        "latency_ms": {
+          "mean": 268.08,
+          "p50": 268.65,
+          "p95": 278.42,
+          "p99": 306.5
+        }
+      },
+      "rate_limit_burst": {
+        "requests": 20,
+        "status_counts": {
+          "200": 15,
+          "429": 5
+        },
+        "latency_ms": {
+          "mean": 136.45,
+          "p50": 139.34,
+          "p95": 185.69,
+          "p99": 188.46
+        }
+      }
+    },
+    {
+      "run_id": "29482665e6364f70ac95e72db00683b6",
+      "direct_backend": {
+        "requests_per_second": 78.08,
+        "latency_ms": {
+          "mean": 113.01,
+          "p50": 87.07,
+          "p95": 260.75,
+          "p99": 500.62
+        },
+        "status_counts": {
+          "200": 60
+        }
+      },
+      "gateway_post_passthrough": {
+        "requests_per_second": 51.46,
+        "latency_ms": {
+          "mean": 353.7,
+          "p50": 348.09,
+          "p95": 449.3,
+          "p99": 464.11
+        },
+        "status_counts": {
+          "200": 59,
+          "502": 1
+        }
+      },
+      "cache": {
+        "cold_status": 200,
+        "cold_x_cache": "MISS",
+        "warm_requests": 60,
+        "warm_hits": {
+          "HIT": 60
+        },
+        "warm_rps": 71.04,
+        "warm_latency_ms": {
+          "mean": 13.92,
+          "p50": 11.44,
+          "p95": 31.64,
+          "p99": 36.64
+        }
+      },
+      "identical_get_burst": {
+        "requests": 20,
+        "status_counts": {
+          "200": 20
+        },
+        "upstream_requests": 1.0,
+        "saved": 19.0,
+        "cache_misses": 20.0,
+        "cache_hits": 0.0,
+        "latency_ms": {
+          "mean": 283.22,
+          "p50": 280.55,
+          "p95": 307.23,
+          "p99": 330.62
+        }
+      },
+      "rate_limit_burst": {
+        "requests": 20,
+        "status_counts": {
+          "200": 15,
+          "429": 5
+        },
+        "latency_ms": {
+          "mean": 178.33,
+          "p50": 183.34,
+          "p95": 260.38,
+          "p99": 260.76
+        }
+      }
+    }
+  ],
+  "aggregate": {
+    "direct_backend": {
+      "requests_per_second": {
+        "median": 78.08,
+        "range": [
+          35.37,
+          120.88
+        ],
+        "trials": [
+          35.37,
+          120.88,
+          78.08
+        ]
+      },
+      "p50_ms": {
+        "median": 87.07,
+        "range": [
+          81.63,
+          298.5
+        ],
+        "trials": [
+          298.5,
+          81.63,
+          87.07
+        ]
+      },
+      "p95_ms": {
+        "median": 260.75,
+        "range": [
+          235.37,
+          883.39
+        ],
+        "trials": [
+          883.39,
+          235.37,
+          260.75
+        ]
+      },
+      "p99_ms": {
+        "median": 500.62,
+        "range": [
+          330.74,
+          1161.94
+        ],
+        "trials": [
+          1161.94,
+          330.74,
+          500.62
+        ]
+      },
+      "status_counts_total": {
+        "200": 180
+      },
+      "total_requests": 180,
+      "success_rate_percent": 100.0
+    },
+    "gateway_post_passthrough": {
+      "requests_per_second": {
+        "median": 51.46,
+        "range": [
+          21.05,
+          64.09
+        ],
+        "trials": [
+          21.05,
+          64.09,
+          51.46
+        ]
+      },
+      "p50_ms": {
+        "median": 348.09,
+        "range": [
+          290.38,
+          924.74
+        ],
+        "trials": [
+          924.74,
+          290.38,
+          348.09
+        ]
+      },
+      "p95_ms": {
+        "median": 449.3,
+        "range": [
+          370.0,
+          1384.42
+        ],
+        "trials": [
+          1384.42,
+          370.0,
+          449.3
+        ]
+      },
+      "p99_ms": {
+        "median": 464.11,
+        "range": [
+          371.08,
+          1430.13
+        ],
+        "trials": [
+          1430.13,
+          371.08,
+          464.11
+        ]
+      },
+      "status_counts_total": {
+        "200": 179,
+        "502": 1
+      },
+      "total_requests": 180,
+      "success_rate_percent": 99.44,
+      "http_502_count": 1
+    },
+    "cache": {
+      "cold_cache_statuses": [
+        "MISS",
+        "MISS",
+        "MISS"
+      ],
+      "warm_hit_counts": [
+        60,
+        60,
+        60
+      ],
+      "warm_request_count": 60,
+      "warm_rps": {
+        "median": 71.04,
+        "range": [
+          50.08,
+          84.51
+        ],
+        "trials": [
+          50.08,
+          84.51,
+          71.04
+        ]
+      },
+      "warm_p50_ms": {
+        "median": 11.44,
+        "range": [
+          8.68,
+          16.13
+        ],
+        "trials": [
+          16.13,
+          8.68,
+          11.44
+        ]
+      },
+      "warm_p95_ms": {
+        "median": 31.64,
+        "range": [
+          27.23,
+          36.65
+        ],
+        "trials": [
+          36.65,
+          27.23,
+          31.64
+        ]
+      },
+      "warm_p99_ms": {
+        "median": 36.64,
+        "range": [
+          33.69,
+          80.34
+        ],
+        "trials": [
+          80.34,
+          33.69,
+          36.64
+        ]
+      }
+    },
+    "coalescing": {
+      "burst_size": 20,
+      "upstream_requests_per_trial": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "saved_requests_per_trial": [
+        19.0,
+        19.0,
+        19.0
+      ],
+      "cache_misses_per_trial": [
+        20.0,
+        20.0,
+        20.0
+      ],
+      "cache_hits_per_trial": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "duplicate_upstream_reduction_percent": 95.0,
+      "latency_p50_ms": {
+        "median": 268.65,
+        "range": [
+          216.15,
+          280.55
+        ],
+        "trials": [
+          216.15,
+          268.65,
+          280.55
+        ]
+      },
+      "latency_p95_ms": {
+        "median": 278.42,
+        "range": [
+          237.14,
+          307.23
+        ],
+        "trials": [
+          237.14,
+          278.42,
+          307.23
+        ]
+      },
+      "simulated_cost_usd_per_burst_without_coalescing": 10.0,
+      "simulated_cost_usd_per_burst_observed": 0.5,
+      "simulated_cost_savings_usd_per_burst": 9.5
+    },
+    "rate_limit": {
+      "burst_size": 20,
+      "configured_initial_bucket_capacity": 15,
+      "accepted_per_trial": [
+        15,
+        15,
+        15
+      ],
+      "denied_429_per_trial": [
+        5,
+        5,
+        5
+      ],
+      "acceptance_matched_initial_capacity_each_trial": true
+    },
+    "gateway_minus_direct": {
+      "requests_per_second": -26.62,
+      "p50_ms": 261.02,
+      "p95_ms": 188.55,
+      "p99_ms": -36.51,
+      "throughput_percent": -34.09,
+      "p50_percent": 299.78,
+      "p95_percent": 72.31
+    }
+  },
+  "interpretation": {
+    "comparability": "These are project-local measurements only. The cited papers use different systems, host setups, workloads, and units; paper-versus-gateway numerical ranking is not valid.",
+    "publication_quality": "Exploratory; no warm-up phase, randomized scenario order, CPU/RAM time series, confidence intervals, or controlled hardware comparison."
+  }
+}

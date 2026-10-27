@@ -1,0 +1,2935 @@
+{
+  "run_id": "29482665e6364f70ac95e72db00683b6",
+  "configuration": {
+    "gateway": "http://localhost:8000",
+    "backend": "http://localhost:8001",
+    "iterations": 60,
+    "concurrency": 20
+  },
+  "scenarios": {
+    "direct_backend": {
+      "requests": 60,
+      "elapsed_seconds": 0.7685,
+      "requests_per_second": 78.08,
+      "latency_ms": {
+        "mean": 113.01,
+        "p50": 87.07,
+        "p95": 260.75,
+        "p99": 500.62
+      },
+      "status_counts": {
+        "200": 60
+      },
+      "responses": [
+        {
+          "status": 200,
+          "latency_ms": 500.6171999993967,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "97",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 480.0165999986348,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "97",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 397.05819999653613,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "97",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 260.75420000051963,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "97",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 189.7184000008565,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "97",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 141.30310000109603,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "97",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 83.60320000065258,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "97",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 97.77939999912633,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "97",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 87.07219999996596,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "97",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 95.21200000017416,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "97",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 92.25140000125975,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "98",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 84.26700000200071,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "98",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 68.78760000108741,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "98",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 82.1472999996331,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "98",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 80.6525000007241,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "98",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 89.59810000305879,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "98",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 79.39130000158912,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "98",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 74.67069999984233,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "98",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 76.18969999748515,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "98",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 68.43369999842253,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "98",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 71.06220000059693,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "98",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 81.21899999969173,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "98",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 84.57840000119177,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "98",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 81.63860000058776,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "98",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 69.17040000189445,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "98",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 68.71490000048652,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "98",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 85.03420000124606,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "98",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 155.439899997873,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "98",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 84.44649999728426,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "98",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 111.39929999990272,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "98",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 104.78950000106124,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "98",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 116.60300000221469,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "98",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 113.42259999946691,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "98",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 118.92580000130692,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "98",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 128.40700000015204,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "98",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 108.41490000166232,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "98",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 102.53780000130064,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "98",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 100.51580000072136,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "98",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 99.36510000261478,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "98",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 95.7198000032804,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "98",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 97.88810000100057,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "98",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 93.66170000066631,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "98",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 94.11600000021281,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "98",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 85.14280000235885,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "98",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 85.49710000079358,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "98",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 94.4113000005018,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "98",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 93.27110000231187,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "98",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 83.82490000076359,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "98",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 70.63740000012331,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "98",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 69.37170000310289,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "98",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 87.2060000001511,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "98",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 61.95239999942714,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "98",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 72.51239999823156,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "98",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 89.0642000013031,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "98",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 88.66569999736384,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "98",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 85.9442000000854,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "98",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 72.83260000258451,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "98",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 78.03979999880539,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "98",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 82.20430000073975,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "98",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 83.30480000222451,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "98",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        }
+      ]
+    },
+    "gateway_post_passthrough": {
+      "requests": 60,
+      "elapsed_seconds": 1.166,
+      "requests_per_second": 51.46,
+      "latency_ms": {
+        "mean": 353.7,
+        "p50": 348.09,
+        "p95": 449.3,
+        "p99": 464.11
+      },
+      "status_counts": {
+        "200": 59,
+        "502": 1
+      },
+      "responses": [
+        {
+          "status": 200,
+          "latency_ms": 249.68360000275425,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "102",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 261.5260999991733,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "102",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 427.99920000106795,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "102",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 502,
+          "latency_ms": 234.2958000008366,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "37",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 449.2997999986983,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "102",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 424.4743999988714,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "102",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 401.9621000006737,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "102",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 421.2454999978945,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "102",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 428.52200000197627,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "102",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 263.8821000000462,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "102",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 425.3628000005847,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "103",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 464.1058000015619,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "103",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 439.0428000006068,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "103",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 397.8291999992507,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "103",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 450.1945000010892,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "103",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 437.67379999917466,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "103",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 396.44570000018575,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "103",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 396.805399999721,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "103",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 445.60009999986505,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "103",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 331.50409999871044,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "103",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 274.12109999932,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "103",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 261.40509999822825,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:04 GMT",
+            "server": "uvicorn",
+            "content-length": "103",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 313.77120000252035,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:05 GMT",
+            "server": "uvicorn",
+            "content-length": "103",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 363.31799999970826,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:05 GMT",
+            "server": "uvicorn",
+            "content-length": "103",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 308.2670000003418,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:05 GMT",
+            "server": "uvicorn",
+            "content-length": "103",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 333.2249999984924,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:05 GMT",
+            "server": "uvicorn",
+            "content-length": "103",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 443.17450000016834,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:05 GMT",
+            "server": "uvicorn",
+            "content-length": "103",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 331.489899999724,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:05 GMT",
+            "server": "uvicorn",
+            "content-length": "103",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 434.6421000009286,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:05 GMT",
+            "server": "uvicorn",
+            "content-length": "103",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 412.5975999995717,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:05 GMT",
+            "server": "uvicorn",
+            "content-length": "103",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 411.0736000002362,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:05 GMT",
+            "server": "uvicorn",
+            "content-length": "103",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 433.16349999804515,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:05 GMT",
+            "server": "uvicorn",
+            "content-length": "103",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 340.44120000180556,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:05 GMT",
+            "server": "uvicorn",
+            "content-length": "103",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 450.0168999984453,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:05 GMT",
+            "server": "uvicorn",
+            "content-length": "103",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 410.79639999952633,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:05 GMT",
+            "server": "uvicorn",
+            "content-length": "103",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 385.0438999979815,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:05 GMT",
+            "server": "uvicorn",
+            "content-length": "103",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 334.0501000020595,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:05 GMT",
+            "server": "uvicorn",
+            "content-length": "103",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 361.6829999991751,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:05 GMT",
+            "server": "uvicorn",
+            "content-length": "103",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 431.2628000006953,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:05 GMT",
+            "server": "uvicorn",
+            "content-length": "103",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 340.8240000026126,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:05 GMT",
+            "server": "uvicorn",
+            "content-length": "103",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 378.4890999995696,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:05 GMT",
+            "server": "uvicorn",
+            "content-length": "103",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 419.6655000014289,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:05 GMT",
+            "server": "uvicorn",
+            "content-length": "103",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 360.23019999993267,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:05 GMT",
+            "server": "uvicorn",
+            "content-length": "103",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 348.08519999933196,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:05 GMT",
+            "server": "uvicorn",
+            "content-length": "103",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 353.4164000011515,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:05 GMT",
+            "server": "uvicorn",
+            "content-length": "103",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 309.3241000024136,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:05 GMT",
+            "server": "uvicorn",
+            "content-length": "103",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 302.07399999926565,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:05 GMT",
+            "server": "uvicorn",
+            "content-length": "103",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 287.5519999979588,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:05 GMT",
+            "server": "uvicorn",
+            "content-length": "103",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 278.35269999923185,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:05 GMT",
+            "server": "uvicorn",
+            "content-length": "103",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 269.69829999870853,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:05 GMT",
+            "server": "uvicorn",
+            "content-length": "103",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 304.97509999986505,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:05 GMT",
+            "server": "uvicorn",
+            "content-length": "103",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 320.14259999778005,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:05 GMT",
+            "server": "uvicorn",
+            "content-length": "103",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 316.67880000168225,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:05 GMT",
+            "server": "uvicorn",
+            "content-length": "103",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 264.7296000031929,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:05 GMT",
+            "server": "uvicorn",
+            "content-length": "103",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 287.828399999853,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:05 GMT",
+            "server": "uvicorn",
+            "content-length": "103",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 261.55710000239196,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:05 GMT",
+            "server": "uvicorn",
+            "content-length": "103",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 274.7970999989775,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:05 GMT",
+            "server": "uvicorn",
+            "content-length": "103",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 264.6550000026764,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:05 GMT",
+            "server": "uvicorn",
+            "content-length": "103",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 240.99420000129612,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:05 GMT",
+            "server": "uvicorn",
+            "content-length": "103",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 257.17619999704766,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:05 GMT",
+            "server": "uvicorn",
+            "content-length": "103",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        }
+      ]
+    },
+    "cache": {
+      "cold_request": {
+        "status": 200,
+        "latency_ms": 172.95179999928223,
+        "headers": {
+          "date": "Tue, 27 Oct 2026 09:42:05 GMT",
+          "server": "uvicorn",
+          "content-type": "application/json",
+          "x-coalesced": "true",
+          "x-cache": "MISS",
+          "content-length": "127",
+          "connection": "close"
+        },
+        "error": null
+      },
+      "warm_requests": {
+        "requests": 60,
+        "elapsed_seconds": 0.8446,
+        "requests_per_second": 71.04,
+        "latency_ms": {
+          "mean": 13.92,
+          "p50": 11.44,
+          "p95": 31.64,
+          "p99": 36.64
+        },
+        "status_counts": {
+          "200": 60
+        },
+        "responses": [
+          {
+            "status": 200,
+            "latency_ms": 8.88660000055097,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:05 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "HIT",
+              "content-length": "127",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 10.470699999132194,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:05 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "HIT",
+              "content-length": "127",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 7.1673999991617166,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "HIT",
+              "content-length": "127",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 11.162000002514105,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "HIT",
+              "content-length": "127",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 9.939300001860829,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "HIT",
+              "content-length": "127",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 7.670500002859626,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "HIT",
+              "content-length": "127",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 15.123400000447873,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "HIT",
+              "content-length": "127",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 13.337399999727495,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "HIT",
+              "content-length": "127",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 9.096999998291722,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "HIT",
+              "content-length": "127",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 16.398200001276564,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "HIT",
+              "content-length": "127",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 12.168699999165256,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "HIT",
+              "content-length": "127",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 9.803100001590792,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "HIT",
+              "content-length": "127",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 8.760599997913232,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "HIT",
+              "content-length": "127",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 29.975400000694208,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "HIT",
+              "content-length": "127",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 14.428200000111246,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "HIT",
+              "content-length": "127",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 7.902600002125837,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "HIT",
+              "content-length": "127",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 14.077800002269214,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "HIT",
+              "content-length": "127",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 15.061099999002181,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "HIT",
+              "content-length": "127",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 15.499099998123711,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "HIT",
+              "content-length": "127",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 32.10829999807174,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "HIT",
+              "content-length": "127",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 36.31429999950342,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "HIT",
+              "content-length": "127",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 14.544200003001606,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "HIT",
+              "content-length": "127",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 14.322999999421882,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "HIT",
+              "content-length": "127",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 7.846100001188461,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "HIT",
+              "content-length": "127",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 11.505999998917105,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "HIT",
+              "content-length": "127",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 12.998700000025565,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "HIT",
+              "content-length": "127",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 11.094499997852836,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "HIT",
+              "content-length": "127",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 11.43709999814746,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "HIT",
+              "content-length": "127",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 31.417599999258528,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "HIT",
+              "content-length": "127",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 13.73569999850588,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "HIT",
+              "content-length": "127",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 14.121899999736343,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "HIT",
+              "content-length": "127",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 8.769500000198605,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "HIT",
+              "content-length": "127",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 15.548399998806417,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "HIT",
+              "content-length": "127",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 14.90869999906863,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "HIT",
+              "content-length": "127",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 13.504099999408936,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "HIT",
+              "content-length": "127",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 13.426099998468999,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "HIT",
+              "content-length": "127",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 9.461900001042522,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "HIT",
+              "content-length": "127",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 19.704700000147568,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "HIT",
+              "content-length": "127",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 9.644799996749498,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "HIT",
+              "content-length": "127",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 12.681700001849094,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "HIT",
+              "content-length": "127",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 12.852500000008149,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "HIT",
+              "content-length": "127",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 30.505300001095748,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "HIT",
+              "content-length": "127",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 8.286200001748512,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "HIT",
+              "content-length": "127",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 8.454499999061227,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "HIT",
+              "content-length": "127",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 11.167199998453725,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "HIT",
+              "content-length": "127",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 9.91720000092755,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "HIT",
+              "content-length": "127",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 6.557599997904617,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "HIT",
+              "content-length": "127",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 10.871800001041265,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "HIT",
+              "content-length": "127",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 6.884200000058627,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "HIT",
+              "content-length": "127",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 11.30380000176956,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "HIT",
+              "content-length": "127",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 10.815599998750258,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "HIT",
+              "content-length": "127",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 7.931800002552336,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "HIT",
+              "content-length": "127",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 31.64459999970859,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "HIT",
+              "content-length": "127",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 7.836599997972371,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "HIT",
+              "content-length": "127",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 9.109800001169788,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "HIT",
+              "content-length": "127",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 11.979200000496348,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "HIT",
+              "content-length": "127",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 18.575399997644126,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "HIT",
+              "content-length": "127",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 7.347399998252513,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "HIT",
+              "content-length": "127",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 10.196999999607215,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "HIT",
+              "content-length": "127",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 36.63880000021891,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "HIT",
+              "content-length": "127",
+              "connection": "close"
+            },
+            "error": null
+          }
+        ]
+      },
+      "warm_cache_header_counts": {
+        "HIT": 60
+      }
+    },
+    "identical_get_burst": {
+      "measurement": {
+        "requests": 20,
+        "elapsed_seconds": 0.3327,
+        "requests_per_second": 60.11,
+        "latency_ms": {
+          "mean": 283.22,
+          "p50": 280.55,
+          "p95": 307.23,
+          "p99": 330.62
+        },
+        "status_counts": {
+          "200": 20
+        },
+        "responses": [
+          {
+            "status": 200,
+            "latency_ms": 330.6229000008898,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "MISS",
+              "content-length": "130",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 253.56200000169338,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "MISS",
+              "content-length": "130",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 260.13699999748496,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "MISS",
+              "content-length": "130",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 264.46560000113095,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "MISS",
+              "content-length": "130",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 264.4247999996878,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "MISS",
+              "content-length": "130",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 265.9778999986884,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "MISS",
+              "content-length": "130",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 269.9351999981445,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "MISS",
+              "content-length": "130",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 280.54989999873214,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "MISS",
+              "content-length": "130",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 283.30819999973755,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "MISS",
+              "content-length": "130",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 279.67890000218176,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "MISS",
+              "content-length": "130",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 278.5922000002756,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "MISS",
+              "content-length": "130",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 280.4547999985516,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "MISS",
+              "content-length": "130",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 282.92180000062217,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "MISS",
+              "content-length": "130",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 285.42129999914323,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "MISS",
+              "content-length": "130",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 292.0162000009441,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "MISS",
+              "content-length": "130",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 293.5952999978326,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "MISS",
+              "content-length": "130",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 295.50250000102096,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "MISS",
+              "content-length": "130",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 297.3067999992054,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "MISS",
+              "content-length": "130",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 307.23220000072615,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "MISS",
+              "content-length": "130",
+              "connection": "close"
+            },
+            "error": null
+          },
+          {
+            "status": 200,
+            "latency_ms": 298.73289999886765,
+            "headers": {
+              "date": "Tue, 27 Oct 2026 09:42:06 GMT",
+              "server": "uvicorn",
+              "content-type": "application/json",
+              "x-coalesced": "true",
+              "x-cache": "MISS",
+              "content-length": "130",
+              "connection": "close"
+            },
+            "error": null
+          }
+        ],
+        "x_cache_header_counts": {
+          "MISS": 20
+        }
+      },
+      "counter_deltas": {
+        "upstream_requests_total": 1.0,
+        "batch_saved_total": 19.0,
+        "coalesced_requests": 19.0,
+        "cache_hits": 0.0,
+        "cache_misses": 20.0
+      }
+    },
+    "rate_limit_burst": {
+      "requests": 20,
+      "elapsed_seconds": 0.2767,
+      "requests_per_second": 72.29,
+      "latency_ms": {
+        "mean": 178.33,
+        "p50": 183.34,
+        "p95": 260.38,
+        "p99": 260.76
+      },
+      "status_counts": {
+        "200": 15,
+        "429": 5
+      },
+      "responses": [
+        {
+          "status": 200,
+          "latency_ms": 183.34029999823542,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:07 GMT",
+            "server": "uvicorn",
+            "content-length": "128",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 145.88090000324883,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:07 GMT",
+            "server": "uvicorn",
+            "content-length": "128",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 144.03350000065984,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:07 GMT",
+            "server": "uvicorn",
+            "content-length": "128",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 152.2655999979179,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:07 GMT",
+            "server": "uvicorn",
+            "content-length": "128",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 162.63339999932214,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:07 GMT",
+            "server": "uvicorn",
+            "content-length": "128",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 260.75940000009723,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:07 GMT",
+            "server": "uvicorn",
+            "content-length": "128",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 209.29810000234284,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:07 GMT",
+            "server": "uvicorn",
+            "content-length": "128",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 224.29689999989932,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:07 GMT",
+            "server": "uvicorn",
+            "content-length": "128",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 239.59689999901457,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:07 GMT",
+            "server": "uvicorn",
+            "content-length": "128",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 260.38400000106776,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:07 GMT",
+            "server": "uvicorn",
+            "content-length": "128",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 252.02820000049542,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:07 GMT",
+            "server": "uvicorn",
+            "content-length": "129",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 235.82920000262675,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:07 GMT",
+            "server": "uvicorn",
+            "content-length": "129",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 232.9706000018632,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:07 GMT",
+            "server": "uvicorn",
+            "content-length": "129",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 254.176099999313,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:07 GMT",
+            "server": "uvicorn",
+            "content-length": "129",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 200,
+          "latency_ms": 188.0525000015041,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:07 GMT",
+            "server": "uvicorn",
+            "content-length": "129",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 429,
+          "latency_ms": 78.77219999863883,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:07 GMT",
+            "server": "uvicorn",
+            "retry-after": "1",
+            "content-length": "53",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 429,
+          "latency_ms": 77.3101000013412,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:07 GMT",
+            "server": "uvicorn",
+            "retry-after": "1",
+            "content-length": "53",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 429,
+          "latency_ms": 83.76910000151838,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:07 GMT",
+            "server": "uvicorn",
+            "retry-after": "1",
+            "content-length": "53",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 429,
+          "latency_ms": 83.21889999933774,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:07 GMT",
+            "server": "uvicorn",
+            "retry-after": "1",
+            "content-length": "53",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        },
+        {
+          "status": 429,
+          "latency_ms": 97.97380000236444,
+          "headers": {
+            "date": "Tue, 27 Oct 2026 09:42:07 GMT",
+            "server": "uvicorn",
+            "retry-after": "1",
+            "content-length": "53",
+            "content-type": "application/json",
+            "connection": "close"
+          },
+          "error": null
+        }
+      ]
+    }
+  },
+  "notes": [
+    "Run against an otherwise idle local stack; results depend on host and Docker resources.",
+    "Gateway POST passthrough is compared with direct simulator POST using the same 50 ms default workload.",
+    "Cache/coalescing compare a warm cache path and one fresh identical-request burst.",
+    "Rate-limit counts are observed, not an accuracy score; the adaptive analyzer may change policy during the run."
+  ]
+}

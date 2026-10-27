@@ -87,20 +87,14 @@ app = FastAPI(
     lifespan=lifespan
 )
 
-# 1. Global Metrics (outermost — captures every request including 4xx/5xx)
-app.add_middleware(MetricsMiddleware)
-
-# 2. Authentication (sets request.state.api_key)
-app.add_middleware(AuthMiddleware)
-
-# 3. Rate Limiting (depends on context from AuthMiddleware)
-app.add_middleware(RateLimitMiddleware)
-
-# 4. Response Cache (intercept GETs after auth and rate limit checks)
-app.add_middleware(ResponseCacheMiddleware)
-
-# 5. Request Coalescing (aggregate concurrent identical GETs within 100ms window)
+# Starlette adds the most recently registered middleware as the outermost layer.
+# Register in reverse request order so auth and rate limiting run before cache/coalescing.
 app.add_middleware(CoalescingMiddleware, window_ms=100)
+app.add_middleware(ResponseCacheMiddleware)
+app.add_middleware(RateLimitMiddleware)
+app.add_middleware(AuthMiddleware)
+# Keep metrics outermost to capture every request, including auth/rate-limit rejections.
+app.add_middleware(MetricsMiddleware)
 
 # --- Routes & Routers ---
 
